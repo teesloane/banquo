@@ -1,0 +1,23 @@
+{
+  "name": "ghostSheet",
+  "version": "1.0.0",
+  "description": "Ghost empty theme hooked with grunt, less, an other goodies",
+  "homepage": "http://blog.cloudoki.com",
+  "author": "Rui Molefas",
+  "email": "rui@cloudoki.com",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-concurrent": "*",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-cssmin": "~0.12.3",
+    "grunt-contrib-jshint": "~0.11.2",
+    "grunt-contrib-less": "~1.0.1",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-notify": "^0.4.1",
+    "grunt-prettify": "^0.4.0",
+    "load-grunt-configs": "^0.4.3",
+    "load-grunt-tasks": "^3.2.0"
+  }
+}
