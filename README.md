@@ -38,7 +38,7 @@ If your watcher is running, the edited `.js` and `.less` files will be built int
 
 #### Grunt tasks
 
-- grunt watcher: Will start the watcher;
-- grunt staging: Will take care of the whole build of the `/staging` folder (this will be automaticaly done by the watcher, if running);
-- grunt release: Will take care of the whole build of the `/dist` folder.
+- *grunt watcher*: Will start the watcher;
+- *grunt staging*: Will take care of the whole build of the `/staging` folder (this will be automaticaly done by the watcher, if running);
+- *grunt release*: Will take care of the whole build of the `/dist` folder.
 
