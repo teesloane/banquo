@@ -1,11 +1,12 @@
 {
   "name": "ghostSheet",
   "version": "1.0.0",
-  "description": "Ghost empty theme hooked with grunt, less, an other goodies",
+  "description": "Ghost empty theme hooked with grunt, less, bower and other goodies",
   "homepage": "http://blog.cloudoki.com",
   "author": "Rui Molefas",
   "email": "rui@cloudoki.com",
   "devDependencies": {
+    "bower": "^1.4.1",
     "grunt": "~0.4.5",
     "grunt-concurrent": "*",
     "grunt-contrib-clean": "^0.6.0",

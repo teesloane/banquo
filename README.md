@@ -5,6 +5,17 @@
 Because sometimes we just want a fresh start!
 Besides that, ghostSheet provides a perfect clean, simple, and up-to-date start for a propper updateable theme. It's built on top of a [grunt](http://gruntjs.com/) structure, which makes it incredibly flexible and scalable.
 
+## Features
+
+- Follows Ghost theme best practices
+- It has all the essential files to install a ghost theme
+- User LESS instead of CSS
+- It has bower included
+- It has modernizr.js included
+- It has normalize.css added the right way
+- It features code minification
+- It has jslint built in the development
+
 ## Install
 Just add the ghostSheet folder to your `/themes` folder, and activate the theme in the admin panel.
 
@@ -24,7 +35,7 @@ None of these folders are present in the theme by default, they are a result of 
 
 #### Install dependencies
 After adding the theme, command-line to it and do a `npm install`. That will install all the necessary dependencies.
-Next, do a `grunt watcher`, to start the watcher.
+Next, do a `bower install` to install al the bower dependencies, and then a `grunt watcher` to start the watcher.
 
 #### Edit files
 If your watcher is running, the edited `.js` and `.less` files will be built into `/staging`. Notice that by default the `default.hbs` file is pointing to those files. When releasing, you must point them to the `/dist` folder instead, like so:
@@ -33,7 +44,7 @@ If your watcher is running, the edited `.js` and `.less` files will be built int
 <link rel="stylesheet" type="text/css" href="/dist/css/main.min.css" />
 ...
 ...
-<script src="/dist/js/ghostSheet.min.js"></script>
+<script src="/dist/js/ghostSheet.js"></script>
 ```
 
 #### Grunt tasks

@@ -1,0 +1,29 @@
+{
+  "name": "ghostSheet",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Cloudoki/ghostSheet",
+  "authors": [
+    "Rui Molefas <rui@cloudoki.com>"
+  ],
+  "description": "Ghost empty theme hooked with grunt, less, bower and other goodies",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "Ghost",
+    "Theme",
+    "Clean"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.3",
+    "modernizr": "~2.8.3"
+  }
+}

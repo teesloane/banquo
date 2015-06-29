@@ -6,8 +6,8 @@ module.exports = {
   },
   main: {
     files: {
-      "<%= dirs.release %>/js/ghostStarter.min.js": [
-      "<%= dirs.source %>/js/ghostStarter.js"
+      "<%= dirs.release %>/js/ghostSheet.min.js": [
+      "<%= dirs.source %>/js/ghostSheet.js"
       ]
     }
   }
