@@ -1,5 +1,5 @@
 {{!< default}}
-{{!< header}}
+{{> header}}
 <main class="main" role="main">
     {{#foreach posts}}
         <article class="article" role="article" itemscope itemtype="http://schema.org/Article">
@@ -21,7 +21,7 @@
         {{/if}}
         </article>
     {{/foreach}}
-    
+
     {{#if pagination}}
         <div class="pagination">
             {{{pagination}}}

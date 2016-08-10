@@ -1,0 +1,12 @@
+@import "_variables.less";
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+
+  // shift that header up on small screens
+  @media(max-width: @small) {
+    display: flex;
+    flex-direction: column;
+  }
+}

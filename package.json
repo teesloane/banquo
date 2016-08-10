@@ -1,10 +1,8 @@
 {
-  "name": "ghostSheet",
+  "name": "banquo",
   "version": "1.0.0",
-  "description": "Ghost empty theme hooked with grunt, less, bower and other goodies",
-  "homepage": "http://blog.cloudoki.com",
-  "author": "Rui Molefas",
-  "email": "rui@cloudoki.com",
+  "description": "Worthy Macbeth, we stay upon your leisure.",
+  "author": "Tyler Sloane",
   "devDependencies": {
     "bower": "^1.4.1",
     "grunt": "~0.4.5",

@@ -1,18 +1,15 @@
 {
-  "name": "ghostSheet",
+  "name": "banquo",
   "version": "1.0.0",
-  "homepage": "https://github.com/Cloudoki/ghostSheet",
-  "authors": [
-    "Rui Molefas <rui@cloudoki.com>"
-  ],
-  "description": "Ghost empty theme hooked with grunt, less, bower and other goodies",
+  "homepage": "",
+  "description": "Worthy Macbeth, we stay upon your leisure.",
   "moduleType": [
     "amd"
   ],
   "keywords": [
-    "Ghost",
-    "Theme",
-    "Clean"
+    "banquo",
+    "ghost",
+    "theme"
   ],
   "license": "MIT",
   "ignore": [
