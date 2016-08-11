@@ -1,6 +1,6 @@
 @import "_variables.less";
 
-// ==== Defaults and Body stuff
+// Defaults
 
 body {
   font-family: "Roboto", Arial;
@@ -17,12 +17,11 @@ a {
 
 }
 
-
 // Layout containers
-
 .wrapper {
   display: flex;
   flex-direction: row;
+  height: 100vh;
 
   // shift that header up on small screens
   @media(max-width: @small) {
