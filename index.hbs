@@ -4,12 +4,15 @@
     {{#foreach posts}}
         <article class="article" role="article" itemscope itemtype="http://schema.org/Article">
             <header class="post-header">
-                <time class="date" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
-                    {{date format='dddd DD MMM YYYY'}}
-                </time>
+
             <h1 class="post-title" itemprop="headline">
                 <a href="{{{url}}}" rel="bookmark">{{title}}</a>
             </h1>
+
+            <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
+                {{date format='dddd DD MMM YYYY'}}
+            </time>
+
             </header>
         <div class="post-content" itemprop="articleBody">
             {{content}}

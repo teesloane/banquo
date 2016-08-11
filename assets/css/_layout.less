@@ -1,5 +1,25 @@
 @import "_variables.less";
 
+// ==== Defaults and Body stuff
+
+body {
+  font-family: "Roboto", Arial;
+}
+
+a {
+  text-decoration: none;
+  color: @link-colour;
+
+  &:hover {
+    color: darken(@link-colour, 10%);
+    text-decoration: underline;
+  }
+
+}
+
+
+// Layout containers
+
 .wrapper {
   display: flex;
   flex-direction: row;
