@@ -1,0 +1,8 @@
+<nav class="pagination" role="navigation">
+    {{#if prev}}
+        <a class="newer-posts pagination-btn prev {{#if next}}center{{/if}}" href="{{page_url prev}}#blog">« Previous</a>
+    {{/if}}
+    {{#if next}}
+        <a class="older-posts pagination-btn next {{#if prev}}center{{/if}}" href="{{page_url next}}#blog">Next »</a>
+    {{/if}}
+</nav>

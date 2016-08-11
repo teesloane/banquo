@@ -22,45 +22,19 @@
         </div>
     {{/if}}
 
-    <div class="share-post">
-        <h4 class="share">Share this post: &nbsp;</h4>
-        <a class="share icon-twitter" target="_blank" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}">
-            <span class="hidethis">Twitter</span>
-        </a>
-        <a class="share icon-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}">
-            <span class="hidethis">Facebook</span>
-        </a>
-        <a class="share icon-gplus" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}">
-            <span class="hidethis">Google+</span>
-        </a>
-    </div>
 
     {{#if author}}
         <footer class="post-footer">
-            <address itemscope itemtype="http://schema.org/Person">
-            {{#if author.image}}
-                <div class="author-image"><img src="{{author.image}}" itemprop="image" /></div>
-            {{/if}}
 
-            <h4 class="author-name"><span itemprop="author">{{author.name}}</span></h4>
-            {{#if author.website}}
-                <div class="author-website"><a href="{{author.website}}" itemprop="url">{{author.website}}</a></div>
-            {{/if}}
-            </address>
-            
-            <div class="author-bio">
-                <p>{{author.bio}}</p>
-            </div>
         </footer>
     {{/if}}
 
 </article>
+
+{{> next-previous}}
+
 {{/post}}
 
-{{#if pagination}}
-    <div class="pagination">
-        {{{pagination}}}
-    </div>
-{{/if}}
+
 </main>
 {{> footer}}

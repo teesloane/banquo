@@ -4,6 +4,8 @@
 
 body {
   font-family: "Roboto", Arial;
+  display: flex;
+  height: 100vh;
 }
 
 a {
@@ -21,7 +23,6 @@ a {
 .wrapper {
   display: flex;
   flex-direction: row;
-  height: 100vh;
 
   // shift that header up on small screens
   @media(max-width: @small) {
@@ -35,8 +36,14 @@ a {
   padding: 50px;
   width: 80%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
+  align-self: flex-start;
+
+  @media(max-width: @small) {
+    display: flex;
+  }
+
 }
 
 img { max-width: 100%;}
