@@ -4,14 +4,23 @@
   display: flex;
   flex-direction: column;
   // no flex grow, shrink, but flex basis for fixed width sidebar
-  flex: 0 0 250px;
+  flex: 0 0 150px;
   background: @off-white;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  align-items: center;
-  padding-top: 50px;
+  // align-items: center;
+  padding: 25px 12px 25px 25px;
+
+  h1 {
+    font-size: 16px;
+  }
+
+  .blog-description {
+    font-size: 13px;
+    font-style: italic;
+  }
 
   @media (max-width: @small) {
     display: flex;
-    // width: 100%;
+    width: 100%;
   }
 }

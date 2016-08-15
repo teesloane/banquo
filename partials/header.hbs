@@ -1,10 +1,15 @@
 {{! Header file }}
 <header id="main-header">
-  <!-- Sitename + Tagline -->
+  <!-- Sitename + Logo + Tagline + navigation -->
+  <a href="{{@blog.url}}" style="background: url({{@blog.logo}}) 0 0 / 100% auto no-repeat;">
+
   <h1 class="m-none">
     <a href="{{@blog.url}}">{{@blog.title}}</a>
   </h1>
-    <p>{{@blog.description}}</p>
+
+  <p class="blog-description">{{@blog.description}}</p>
+
+  {{navigation}}
 
   <!-- site navigation -->
   <nav>
