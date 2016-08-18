@@ -2,20 +2,27 @@
 <main class="main" role="main">
 {{#post}}
 
-    <article class="article" role="article" itemscope itemtype="http://schema.org/Article">
-        <header class="post-header">
-            <time class="date" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
-                {{date format='dddd DD MMM YYYY'}}
-            </time>
-        <h1 class="post-title" itemprop="headline">
+    <article class="post-article" role="article" itemscope itemtype="http://schema.org/Article">
+      <header class="post-header">
+
+        <h1 class="post-title mb-none" itemprop="headline">
             {{title}}
         </h1>
-        </header>
+
+        <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
+          {{date format='dddd DD MMM YYYY'}}
+        </time>
+
+      </header>
+
     <div class="post-content" itemprop="articleBody">
         {{content}}
     </div>
 
-    {{#if tags}}
+    <hr />
+
+    <!-- Toggle if you want tags + author section (I don't!) -->
+    <!-- {{#if tags}}
         <div class="post-tags">
             Tags: {{tags separator=" | "}}
         </div>
@@ -26,7 +33,7 @@
         <footer class="post-footer">
 
         </footer>
-    {{/if}}
+    {{/if}} -->
 
 </article>
 

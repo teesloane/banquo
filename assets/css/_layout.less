@@ -1,10 +1,7 @@
 @import "_variables.less";
 
-// Defaults
-
 body {
   font-family: "Roboto", Arial;
-  // height: 100vh;
 }
 
 a {
@@ -12,17 +9,25 @@ a {
   color: @link-colour;
 
   &:hover {
-    color: darken(@link-colour, 10%);
-    text-decoration: underline;
+    color: rgb(212, 134, 134);
   }
+}
 
+
+img { max-width: 100%;}
+
+// make hr into three nice bloops.
+hr {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAUCAYAAAEMx6gDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAxhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDdFMkFDMDBFMDIwMTFFNTkyMjBEOTY1MDlEN0Y5M0MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OEVBMDkzQTRERjZEMTFFNTkyMjBEOTY1MDlEN0Y5M0MiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjhFQTA5M0EwREY2RDExRTU5MjIwRDk2NTA5RDdGOTNDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjhFQTA5M0ExREY2RDExRTU5MjIwRDk2NTA5RDdGOTNDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+W9++7gAAAOBJREFUeNpi/P//PwOpgImBDECWJoAAYiTVeUw0dxZAADGSE2JUcVV6ejoYkyoHlf+MLgYQQAPnk+FjCTBc/+MJc3xyPwcsdQEEEF0sGTbxTg/AQqxC5Dw+c+ZMBlrrQ9ZLjL5hEyPDJo8ABNBoZh/1yKhHRusR8st0auqjRT0Cakh9JiOwyNUHAv+pHiNAwE6mY9gpSDGMo/XIUAUAATZsYmQ0QkbBaISMRsgoGI2Q0QihcoRAW96tQJwHxJOAuJrU1vtgto/WdtKyuchI78Q1EAl6tMgaLbJGwWiEjGAAANGpaYZ5u8gyAAAAAElFTkSuQmCC') center no-repeat;
+  height: 50px;
+  border: 0;
 }
 
 // Layout containers
 .wrapper {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  min-height: 100vh;
 
   // shift that header up on small screens
   @media(max-width: @small) {
@@ -33,17 +38,12 @@ a {
 
 .main {
   max-width: 700px;
-  padding: 50px;
   width: 80%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-self: flex-start;
+  margin: 0 auto;
+  padding: @padding-base @padding-base;
 
   @media(max-width: @small) {
     display: flex;
   }
 
 }
-
-img { max-width: 100%;}
