@@ -9,9 +9,12 @@
             {{title}}
         </h1>
 
-        <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
-          {{date format='dddd DD MMM YYYY'}}
-        </time>
+        <!-- Only notes have dates -->
+        {{#has tag="note"}}
+            <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
+              {{date format='dddd DD MMM YYYY'}}
+            </time>
+        {{/has}}
 
       </header>
 
@@ -22,23 +25,15 @@
     <hr />
 
     <!-- Toggle if you want tags + author section (I don't!) -->
-    <!-- {{#if tags}}
+     <!-- {{#if tags}}
         <div class="post-tags">
             Tags: {{tags separator=" | "}}
         </div>
-    {{/if}}
-
-    {{#if author}}
-        <footer class="post-footer">
-        </footer>
     {{/if}} -->
+
 
 </article>
 
-<!-- Only show next / prev if it's not a portfolio/work piece -->
-{{^has tag="work"}}
-    {{> next-previous}}
-{{/has}}
 
 {{/post}}
 

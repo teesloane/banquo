@@ -51,33 +51,3 @@
     }
   }
 })();
-
-
-//
-
-// I wish I could do this with CSS
-
-  // var projects = document.getElementById( 'projects' );
-  //
-  // function resize() {
-  //
-  //   var baseWidth = 200;
-  //   var baseHeight = 150;
-  //
-  //   var fullWidth = projects.clientWidth;
-  //   var width = ( fullWidth / ( Math.ceil( fullWidth / baseWidth ) * baseWidth ) ) * baseWidth;
-  //   var height = ( width / baseWidth ) * baseHeight;
-  //
-  //   for ( var i = 0; i < projects.children.length; i ++ ) {
-  //
-  //     var child = projects.children[ i ];
-  //
-  //     child.style.width = width + 'px';
-  //     child.style.height = height + 'px';
-  //
-  //   }
-  //
-  // }
-  //
-  // window.addEventListener( 'resize', resize, false );
-  // resize();
