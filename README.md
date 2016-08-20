@@ -7,7 +7,7 @@
 
 ***
 
-_Banquo_ is a Ghost theme aims to be a _portfolio-first_ site, with a side of blogging/note taking. _Banquo_ operates a bit differently than some standard Ghost themes, in that post-loops exist in more than one place, and are targeted at specific post types. This functionality comes with some trade-offs due to the way Ghost handles working with different loops, so before I go on any further, let me describe a use case. This theme maybe be useful for you if you:
+_Banquo_ is a Ghost theme that aims to be a _portfolio-first_ site, with a side of blogging/note taking. _Banquo_ operates a bit differently than some standard Ghost themes, in that post-loops exist in more than one place, and are targeted at specific post types. This functionality comes with some trade-offs due to the way Ghost handles working with different loops, so before I go on any further, let me describe a use case. This theme maybe be useful for you if you:
 
 - want to display your work immediately when people visit your site,
 - You want your _work / portfolio / projects_ (henceforth, "projects") page to be image-first / have thumbnails.
