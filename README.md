@@ -50,4 +50,4 @@ Seeing that this is a bit more specialized of a theme, it does take a bit of set
 
 ## Credits
 
-Thanks to (GhostSheet)[https://github.com/Cloudoki/ghostSheet] for stripping a Ghost theme down to nothing so building from scratch was no problem at all.
+Thanks to [GhostSheet](https://github.com/Cloudoki/ghostSheet) for stripping a Ghost theme down to nothing so building from scratch was no problem at all.
