@@ -1,12 +1,115 @@
 @import "_variables.less";
+body {
+  font-family: "Roboto", Arial;
+}
 
+a {
+  text-decoration: none;
+  color: @link-colour;
+  &:hover {
+    color: rgb(212, 134, 134);
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+// make hr into three nice bloops.
+hr {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAUCAYAAAEMx6gDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAxhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDdFMkFDMDBFMDIwMTFFNTkyMjBEOTY1MDlEN0Y5M0MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OEVBMDkzQTRERjZEMTFFNTkyMjBEOTY1MDlEN0Y5M0MiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjhFQTA5M0EwREY2RDExRTU5MjIwRDk2NTA5RDdGOTNDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjhFQTA5M0ExREY2RDExRTU5MjIwRDk2NTA5RDdGOTNDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+W9++7gAAAOBJREFUeNpi/P//PwOpgImBDECWJoAAYiTVeUw0dxZAADGSE2JUcVV6ejoYkyoHlf+MLgYQQAPnk+FjCTBc/+MJc3xyPwcsdQEEEF0sGTbxTg/AQqxC5Dw+c+ZMBlrrQ9ZLjL5hEyPDJo8ABNBoZh/1yKhHRusR8st0auqjRT0Cakh9JiOwyNUHAv+pHiNAwE6mY9gpSDGMo/XIUAUAATZsYmQ0QkbBaISMRsgoGI2Q0QihcoRAW96tQJwHxJOAuJrU1vtgto/WdtKyuchI78Q1EAl6tMgaLbJGwWiEjGAAANGpaYZ5u8gyAAAAAElFTkSuQmCC') center no-repeat;
+  height: 50px;
+  border: 0;
+}
+
+p {
+  font-size: 14px;
+}
+
+// Layout containers
 .wrapper {
   display: flex;
   flex-direction: row;
-
+  min-height: 100vh;
   // shift that header up on small screens
   @media(max-width: @small) {
     display: flex;
     flex-direction: column;
+  }
+}
+
+.main {
+  max-width: 700px;
+  width: 80%;
+  margin: 0 auto;
+  padding: @padding-base;
+  @media(max-width: @small) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// home page / "work grid"
+#projects {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;
+  padding: @padding-base 1% 1%;
+  max-width: 1440px;
+
+  .project_piece {
+    min-width: 30%; // this + padding %'s, if > 33% will result in a wrap
+    flex: 1;
+    padding: 0 1%;
+    margin-bottom: 2%;
+
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .overlay-container {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+    }
+
+    .image_overlay {
+      align-items: center;
+      background: black;
+      bottom: 0;
+      color: white;
+      display: flex;
+      justify-content: center;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      text-transform: uppercase;
+      top: 0;
+
+      p {
+        background: black;
+        padding: 10px;
+        border: 1px solid white;
+        opacity: 1;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    @media(max-width: 900px) {
+      min-width: 50%;
+    }
+
   }
 }

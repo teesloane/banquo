@@ -1,0 +1,25 @@
+@import "_variables.less";
+
+#main-nav {
+  list-style-type: none;
+  text-transform: uppercase;
+  padding: 10px 0 0 0;
+  margin: 0;
+
+  li { padding: @padding-base/2 0; }
+
+  @media(max-width: @small) {
+    display: none;
+    padding: 0;
+  }
+}
+
+#mobile-nav-toggle {
+  color: @link-colour;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  @media(min-width: @small) {
+    display: none;
+  }
+}

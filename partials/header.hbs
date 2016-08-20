@@ -1,4 +1,22 @@
 {{! Header file }}
 <header id="main-header">
-  BARROW DOWNS
+  <section class="p-one">
+    <!-- Sitename + Logo + Tagline + navigation -->
+    <a href="{{@blog.url}}" style="background: url({{@blog.logo}}) 0 0 / 100% auto no-repeat;">
+
+    <section class="header-tagline-wrap">
+      <h1 class="m-none"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+      <p class="blog-description">{{@blog.description}}</p>
+    </section>
+
+    <section id="pyramid"></section>
+    <section id="mobile-nav-toggle">&#9660;</section>
+
+
+    <section class="mt-quarter text center">
+      {{navigation}}
+    </section>
+
+  </section>
+
 </header>

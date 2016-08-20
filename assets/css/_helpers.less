@@ -1,6 +1,4 @@
-@padding-base: 100px;
-@margin-base: 100px;
-
+@import '_variables.less';
 /* ====================== Border Helpers ====================== */
 
 ._border {
@@ -116,6 +114,7 @@
 .mb-one { margin-bottom: @margin-base;}
 .mb-half { margin-bottom: @margin-base / 2;}
 .mb-quarter { margin-bottom: @margin-base / 4;}
+.mb-none { margin-bottom: 0; }
 
 // margin left
 .ml-two { margin-left: @margin-base * 2;}
@@ -150,6 +149,9 @@
       font-weight: 800;
   }
 
+  &.center {
+    text-align: center;
+  }
 &.small {
 		font-size: 14px;
 	}
@@ -176,4 +178,8 @@
 	&.underline {
 		text-decoration: underline;
 	}
+}
+
+.hidden {
+    display: none;
 }

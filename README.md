@@ -1,55 +1,24 @@
-# ghostSheet
-> Ghost empty theme hooked with grunt, less, an other goodies
+# BANQUO
 
-## Why?
-Because sometimes we just want a fresh start!
-Besides that, ghostSheet provides a perfect clean, simple, and up-to-date start for a propper updateable theme. It's built on top of a [grunt](http://gruntjs.com/) structure, which makes it incredibly flexible and scalable.
+> Good sir, why do you start; and seem to fear / Things that do sound so fair?
 
-## Features
+_Banquo_ is a Ghost theme aims to be a _portfolio-first_ site, with a side of blogging/note taking. _Banquo_ operates a bit differently than some standard Ghost themes, in that post-loops exist in more than one place, and are targeted at specific post types. This functionality comes with some trade-offs due to the way Ghost handles working with different loops, so before I go on any further, let me describe a use case. This theme maybe be useful for you if you:
 
-- Follows Ghost theme best practices
-- It has all the essential files to install a ghost theme
-- User LESS instead of CSS
-- It has bower included
-- It has modernizr.js included
-- It has normalize.css added the right way
-- It features code minification
-- It has jslint built in the development
+- want to display your work immediately when people visit your site,
+- You want your _work / portfolio / projects_ (henceforth, "projects") page to be image-first / have thumbnails.
+- You want the option of blogging.  
 
-## Install
-Just add the ghostSheet folder to your `/themes` folder, and activate the theme in the admin panel.
+Seeing that this is a bit more specialized of a theme, it does take a bit of setup to get started.
 
-## Structure
-Inside the ghostSheet theme there are the regular `/assets` and `/partials` folder, plus all the basic and essential files to get you started. These files have a very simple example code, that you are encouraged to change.
+## The Project Page (Home Page)
 
-On top of this, there are some other additional files and folders to make the actual grunt build, staging and release.
-The files inside /js and /css are the ones being procesed by grunt and they are where you must add custom code. The remaining files don't need any build.
+- Any post that you want to be featured as a "project" post on the home page needs to be tagged as "project".
+![]()
+- If you do not include a featured image, you will have an nice broken image link displayed instead. I might eventually put something in that anticipates that mistake (a placeholder image), but for now, forgetting to upload a post image will result in this:
+![]()
 
-#### Staging and Release folders
-None of these folders are present in the theme by default, they are a result of different build stages.
+## The Notes / Blog page.
 
-- staging: Where the `/assets` files are automaticaly built into, unminified, and the ones you should use during the development stage;
-- dist: Where the final release files, built and minified, will be.
-
-## Usage
-
-#### Install dependencies
-After adding the theme, command-line to it and do a `npm install`. That will install all the necessary dependencies.
-Next, do a `bower install` to install al the bower dependencies, and then a `grunt watcher` to start the watcher.
-
-#### Edit files
-If your watcher is running, the edited `.js` and `.less` files will be built into `/staging`. Notice that by default the `default.hbs` file is pointing to those files. When releasing, you must point them to the `/dist` folder instead, like so:
-
-```html
-<link rel="stylesheet" type="text/css" href="/dist/css/main.min.css" />
-...
-...
-<script src="/dist/js/ghostSheet.js"></script>
-```
-
-#### Grunt tasks
-
-- *grunt watcher*: Will start the watcher;
-- *grunt staging*: Will take care of the whole build of the `/staging` folder (this will be automaticaly done by the watcher, if running);
-- *grunt release*: Will take care of the whole build of the `/dist` folder.
-
+- Creating a blog is a bit involved, but stick with me here.
+- In your ghost admin dash you'll need to create a **static page** called "notes". Because ghost allows you to create custom pages with their own custom styling, the page (for now, pending future updates) needs to called `notes` in order to line up with the `page-notes.hbs` file.
+- Similar to any project post you create, you'll need to add a `note` tag when creating your post.
