@@ -54,6 +54,15 @@ You'll need to enable public API in your (at the time of writing this) Ghost Lab
 > A standard post
 
 
+## Build Instructions
+
+`git clone https://github.com/teesloane/banquo.git`
+
+`bower install`
+
+`grunt staging` // compiles the css / js assets
+
+
 ## Contributions
 
 All development happens on the `develop` branch. 
@@ -61,3 +70,4 @@ All development happens on the `develop` branch.
 ## Credits
 
 Thanks to [GhostSheet](https://github.com/Cloudoki/ghostSheet) for stripping a Ghost theme down to nothing so building from scratch was no problem at all.
+
