@@ -56,6 +56,8 @@ You'll need to enable public API in your (at the time of writing this) Ghost Lab
 
 ## Build Instructions
 
+Note: you may need to preface build instructions with `sudo` depending on where you are building. 
+
 `git clone https://github.com/teesloane/banquo.git`
 
 `npm install`
