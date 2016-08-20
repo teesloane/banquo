@@ -44,20 +44,23 @@ hr {
 
   @media(max-width: @small) {
     display: flex;
+    flex-direction: column;
   }
 
 }
 
-.portfolio-container {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: row;
-  flex-wrap: wrap;
+#projects {
   align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  height: auto;
   justify-content: center;
-  padding: 2%;
+  padding: 1%;
 
-  .portfolio-piece {
+  .project_piece {
     min-width: 30%;
     flex: 1;
     padding: 1%;
@@ -66,7 +69,32 @@ hr {
       width: 100%;
       height: 200px;
       object-fit: cover;
+    }
+
+    .overlay-container {
+      display: flex;
       overflow: hidden;
+      position: relative;
+      text-align: center;
+    }
+
+    .image_overlay {
+      align-items: center;
+      background: black;
+      bottom: 0;
+      color: white;
+      display: flex;
+      justify-content: center;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      text-transform: uppercase;
+      top: 0;
+
+      &:hover {
+        opacity: 0.7;
+      }
     }
 
     @media(max-width: 900px) { min-width: 50%; }

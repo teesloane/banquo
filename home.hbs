@@ -1,18 +1,24 @@
 {{!< default}}
 
-<main class="portfolio-container" role="main">
+<main id="projects" role="main">
+
     {{#get "posts" filter="tags:work"}}
       {{#foreach posts}}
 
-        <article class="portfolio-piece" role="article" itemscope itemtype="http://schema.org/Article">
-          <header class="post-header">
-            <a href="{{{url}}}"><img src={{image}} /></a>
+        <article class="project_piece" role="article" itemscope itemtype="http://schema.org/Article">
+            <a href="{{{url}}}">
+                <div class="overlay-container">
+                    <img src={{image}} />
+                    <div class="image_overlay">
+                        <p>{{title}}</p>
+                    </div>
+
+                </div>
+            </a>
 
             <!-- <h5 class="post-title mb-none" itemprop="headline">
               <a href="{{{url}}}" rel="bookmark">{{title}}</a>
             </h5> -->
-
-          </header>
 
           <!-- {{#if tags}}
               <div class="post-tags">
