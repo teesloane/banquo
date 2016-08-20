@@ -28,17 +28,17 @@
         </div>
     {{/if}}
 
-
     {{#if author}}
         <footer class="post-footer">
-
         </footer>
     {{/if}} -->
 
 </article>
 
-<!-- TODO: Check if the current post is of type (tag): "work" , if so, next post should be of same type. -->
-{{> next-previous}}
+<!-- Only show next / prev if it's not a portfolio/work piece -->
+{{^has tag="work"}}
+    {{> next-previous}}
+{{/has}}
 
 {{/post}}
 
