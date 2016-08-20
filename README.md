@@ -15,6 +15,12 @@ _Banquo_ is a Ghost theme aims to be a _portfolio-first_ site, with a side of bl
 
 Seeing that this is a bit more specialized of a theme, it does take a bit of setup to get started.
 
+## Enable Public API
+
+You'll need to enable public API in your (at the time of writing this) Ghost Labs in the dashboard. This allows post loops to query the database for posts by specific filters (in this case, by the tags). See the screenshot below:
+
+![](https://cloud.githubusercontent.com/assets/12987958/17832874/3111d2f6-66dc-11e6-9dac-8d03bd275534.png)
+
 ## The Project Page (Home Page)
 
 - Any post that you want to be featured as a "project" post on the home page needs to be tagged as "project".
