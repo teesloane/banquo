@@ -17,6 +17,10 @@ var banquo = {
   var mobileNavToggle = document.getElementById('mobile-nav-toggle');
   var mainNav = document.getElementById('main-nav');
 
+  if (window.innerWidth < banquo.breakPoint) {
+    mainNav.style.display = 'none';
+  }
+
   mobileNavToggle.addEventListener('click', function() {
     if(mainNav.style.display === 'none') {
       mainNav.style.display = 'block';
@@ -26,10 +30,13 @@ var banquo = {
   });
 
   // if moving from mobile viewport to desktop, also show the mainNav
+  // if moving to mobile, hide the mainNav
   window.addEventListener('resize', function() {
-    console.log(window.innerWidth);
     if (window.innerWidth > banquo.breakPoint) {
       mainNav.style.display = 'block';
+    } else {
+      mainNav.style.display = 'none';
+
     }
   });
 })();
@@ -37,7 +44,6 @@ var banquo = {
 
 /*=============== Z1 Interactive Header Lines =================== */
 (function() {
-  console.log('hi');
   // Target container, append lines, create array of lines.
   var stackOfLines = document.getElementById('pyramid');
   createLines(stackOfLines, 7);
