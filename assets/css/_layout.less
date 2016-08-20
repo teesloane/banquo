@@ -55,10 +55,12 @@ hr {
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: center;
+  padding: 2%;
 
   .portfolio-piece {
-    min-width: 33.333%;
+    min-width: 30%;
     flex: 1;
+    padding: 1%;
 
     img {
       width: 100%;
@@ -67,6 +69,6 @@ hr {
       overflow: hidden;
     }
 
-    @media(max-width: @small) { min-width: 50%; }
+    @media(max-width: 900px) { min-width: 50%; }
   }
 }
