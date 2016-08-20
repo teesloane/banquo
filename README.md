@@ -46,3 +46,8 @@ Seeing that this is a bit more specialized of a theme, it does take a bit of set
 ![](https://cloud.githubusercontent.com/assets/12987958/17832554/988d72c2-66d3-11e6-9cd2-04b1c3930ac9.png)
 
 > A standard post
+
+
+## Credits
+
+Thanks to (GhostSheet)[https://github.com/Cloudoki/ghostSheet] for stripping a Ghost theme down to nothing so building from scratch was no problem at all.
