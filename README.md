@@ -1,7 +1,7 @@
 # BANQUO
 > Good sir, why do you start; and seem to fear / Things that do sound so fair?
 
-![](https://cloud.githubusercontent.com/assets/12987958/17832477/c98d1154-66d1-11e6-99c4-07c22f95f1d1.png)
+![](https://cloud.githubusercontent.com/assets/12987958/17832552/988aa128-66d3-11e6-9639-27434c0e05ed.png)
 
 > The Banquo home page
 
@@ -23,13 +23,13 @@ Seeing that this is a bit more specialized of a theme, it does take a bit of set
 
 - If you do not include a featured image, you will have an nice broken image link displayed instead. I might eventually put something in that anticipates that mistake (a placeholder image), but for now, forgetting to upload a post image will result in this:
 
-![](https://cloud.githubusercontent.com/assets/12987958/17832472/c97c8c76-66d1-11e6-84fe-d08a6d9df491.png)
+![](https://cloud.githubusercontent.com/assets/12987958/17832551/988046a6-66d3-11e6-877f-202f1187c981.png)
 
 Note: The title of the post won't automatically become "SHIT". That was my post title for demonstrative purposes.
 
 ## The Notes / Blog page.
 
-![](https://cloud.githubusercontent.com/assets/12987958/17832474/c98a63c8-66d1-11e6-8230-25f6b9a316fc.png)
+![](https://cloud.githubusercontent.com/assets/12987958/17832553/988ac2b6-66d3-11e6-8acf-df9804a0dd87.png)
 
 > "Notes" page
 
@@ -37,12 +37,12 @@ Note: The title of the post won't automatically become "SHIT". That was my post 
 - In your ghost admin dash you'll need to create a **static page** called "notes". Because ghost allows you to create custom pages with their own custom styling, the page (for now, pending future updates) needs to called `notes` in order to line up with the `page-notes.hbs` file.
 - Similar to any project post you create, you'll need to add a `note` tag when creating your post.
 
-![](https://cloud.githubusercontent.com/assets/12987958/17832475/c98bbe30-66d1-11e6-97b7-452c0186cdbc.png)
+![](https://cloud.githubusercontent.com/assets/12987958/17832555/988e8eaa-66d3-11e6-9b1c-836843bcb2b0.png)
 
 
 ### Other Screenshots
 
 ***
-![](https://cloud.githubusercontent.com/assets/12987958/17832473/c98a0176-66d1-11e6-9d6d-f9435353285a.png)
+![](https://cloud.githubusercontent.com/assets/12987958/17832554/988d72c2-66d3-11e6-9cd2-04b1c3930ac9.png)
 
 > A standard post
