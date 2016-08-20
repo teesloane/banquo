@@ -58,6 +58,8 @@ You'll need to enable public API in your (at the time of writing this) Ghost Lab
 
 `git clone https://github.com/teesloane/banquo.git`
 
+`npm install`
+
 `bower install`
 
 `grunt staging` // compiles the css / js assets
