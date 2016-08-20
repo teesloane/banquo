@@ -1,13 +1,10 @@
 {{!< default}}
 <main class="main" role="main">
-{{#post}}
-
+  {{#post}}
     <article class="post-article" role="article" itemscope itemtype="http://schema.org/Article">
-      <header class="post-header">
 
-        <h1 class="post-title mb-none" itemprop="headline">
-            {{title}}
-        </h1>
+      <header class="post-header">
+        <h1 class="post-title mb-none" itemprop="headline">{{title}}</h1>
 
         <!-- Only notes have dates -->
         {{#has tag="note"}}
@@ -15,28 +12,15 @@
               {{date format='dddd DD MMM YYYY'}}
             </time>
         {{/has}}
-
       </header>
 
-    <div class="post-content" itemprop="articleBody">
-        {{content}}
-    </div>
+      <div class="post-content" itemprop="articleBody">{{content}}</div>
 
-    <hr />
+      <hr />
 
-    <!-- Toggle if you want tags + author section (I don't!) -->
-     <!-- {{#if tags}}
-        <div class="post-tags">
-            Tags: {{tags separator=" | "}}
-        </div>
-    {{/if}} -->
+    </article>
 
-
-</article>
-
-
-{{/post}}
-
-
+    {{/post}}
 </main>
+
 {{> footer}}

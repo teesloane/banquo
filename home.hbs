@@ -1,35 +1,22 @@
 {{!< default}}
-
 <main id="projects" role="main">
-
     {{#get "posts" filter="tags:work"}}
       {{#foreach posts}}
-
         <article class="project_piece" role="article" itemscope itemtype="http://schema.org/Article">
+
+            <!-- "project" post must have tag "work" and a featured image.  -->
             <a href="{{{url}}}">
                 <div class="overlay-container">
                     <img src={{image}} />
                     <div class="image_overlay">
                         <p>{{title}}</p>
                     </div>
-
                 </div>
             </a>
-
-            <!-- <h5 class="post-title mb-none" itemprop="headline">
-              <a href="{{{url}}}" rel="bookmark">{{title}}</a>
-            </h5> -->
-
-          <!-- {{#if tags}}
-              <div class="post-tags">
-                  Tags: {{tags separator=" | "}}
-              </div>
-          {{/if}} -->
 
         </article>
       {{/foreach}}
     {{/get}}
-
 </main>
 
 {{> footer}}

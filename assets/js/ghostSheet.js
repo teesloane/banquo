@@ -1,7 +1,41 @@
-// Interactivity + Noodling
-  // A. Header Line Interaction
+/* File Map
+A Globals
+B Dom Manipulation
+  1: Mobile Nav
+Z Misc + Interactivity
+  1: Header lines
+*/
 
-/*=============== A. Interactive Header Lines =================== */
+/*=============== A. Globals =================== */
+var banquo = {
+  breakPoint: 700,
+};
+
+
+/*=============== B1 Mobile Nav =================== */
+(function() {
+  var mobileNavToggle = document.getElementById('mobile-nav-toggle');
+  var mainNav = document.getElementById('main-nav');
+
+  mobileNavToggle.addEventListener('click', function() {
+    if(mainNav.style.display === 'none') {
+      mainNav.style.display = 'block';
+    } else {
+      mainNav.style.display = 'none';
+    }
+  });
+
+  // if moving from mobile viewport to desktop, also show the mainNav
+  window.addEventListener('resize', function() {
+    console.log(window.innerWidth);
+    if (window.innerWidth > banquo.breakPoint) {
+      mainNav.style.display = 'block';
+    }
+  });
+})();
+
+
+/*=============== Z1 Interactive Header Lines =================== */
 (function() {
   console.log('hi');
   // Target container, append lines, create array of lines.

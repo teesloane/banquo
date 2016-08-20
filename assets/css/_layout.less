@@ -23,6 +23,8 @@ hr {
   border: 0;
 }
 
+p { font-size: 14px; }
+
 // Layout containers
 .wrapper {
   display: flex;
@@ -58,12 +60,15 @@ hr {
   flex-wrap: wrap;
   height: auto;
   justify-content: center;
-  padding: 1%;
+  padding: 0 1% 1% 1%;
+  padding-top: @padding-base;
+  max-width: 1440px;
 
   .project_piece {
-    min-width: 30%;
+    min-width: 30%; // this + padding %'s, if > 33% will result in a wrap
     flex: 1;
-    padding: 1%;
+    padding: 0 1%;
+    margin-bottom: 2%;
 
     img {
       width: 100%;
