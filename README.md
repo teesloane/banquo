@@ -1,13 +1,19 @@
 # BANQUO
 
 ![](https://cloud.githubusercontent.com/assets/12987958/17832477/c98d1154-66d1-11e6-99c4-07c22f95f1d1.png)
+
 > The Banquo home page
+
 ***
 ![](https://cloud.githubusercontent.com/assets/12987958/17832474/c98a63c8-66d1-11e6-8230-25f6b9a316fc.png)
+
 > "Notes" page
+
 ***
 ![](https://cloud.githubusercontent.com/assets/12987958/17832473/c98a0176-66d1-11e6-9d6d-f9435353285a.png)
+
 > A standard post
+
 ***
 
 
