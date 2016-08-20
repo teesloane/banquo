@@ -1,23 +1,11 @@
 # BANQUO
+> Good sir, why do you start; and seem to fear / Things that do sound so fair?
 
 ![](https://cloud.githubusercontent.com/assets/12987958/17832477/c98d1154-66d1-11e6-99c4-07c22f95f1d1.png)
 
 > The Banquo home page
 
 ***
-![](https://cloud.githubusercontent.com/assets/12987958/17832474/c98a63c8-66d1-11e6-8230-25f6b9a316fc.png)
-
-> "Notes" page
-
-***
-![](https://cloud.githubusercontent.com/assets/12987958/17832473/c98a0176-66d1-11e6-9d6d-f9435353285a.png)
-
-> A standard post
-
-***
-
-
-> Good sir, why do you start; and seem to fear / Things that do sound so fair?
 
 _Banquo_ is a Ghost theme aims to be a _portfolio-first_ site, with a side of blogging/note taking. _Banquo_ operates a bit differently than some standard Ghost themes, in that post-loops exist in more than one place, and are targeted at specific post types. This functionality comes with some trade-offs due to the way Ghost handles working with different loops, so before I go on any further, let me describe a use case. This theme maybe be useful for you if you:
 
@@ -41,8 +29,20 @@ Note: The title of the post won't automatically become "SHIT". That was my post 
 
 ## The Notes / Blog page.
 
+![](https://cloud.githubusercontent.com/assets/12987958/17832474/c98a63c8-66d1-11e6-8230-25f6b9a316fc.png)
+
+> "Notes" page
+
 - Creating a blog is a bit involved, but stick with me here.
 - In your ghost admin dash you'll need to create a **static page** called "notes". Because ghost allows you to create custom pages with their own custom styling, the page (for now, pending future updates) needs to called `notes` in order to line up with the `page-notes.hbs` file.
 - Similar to any project post you create, you'll need to add a `note` tag when creating your post.
 
 ![](https://cloud.githubusercontent.com/assets/12987958/17832475/c98bbe30-66d1-11e6-97b7-452c0186cdbc.png)
+
+
+### Other Screenshots
+
+***
+![](https://cloud.githubusercontent.com/assets/12987958/17832473/c98a0176-66d1-11e6-9d6d-f9435353285a.png)
+
+> A standard post
