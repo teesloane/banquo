@@ -25,7 +25,7 @@ Seeing that this is a bit more specialized of a theme, it does take a bit of set
 
 ![](https://cloud.githubusercontent.com/assets/12987958/17832551/988046a6-66d3-11e6-877f-202f1187c981.png)
 
-Note: The title of the post won't automatically become "SHIT". That was my post title for demonstrative purposes.
+<sub><sup>Note: The title of the post won't automatically become "SHIT". That was my post title for demonstrative purposes.</sup></sub>
 
 ## The Notes / Blog page.
 
