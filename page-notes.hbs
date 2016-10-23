@@ -1,7 +1,7 @@
 {{!< default}}
 <main class="main" role="main">
 
-  {{#get "posts" filter="tags:note"}}
+  {{#get "posts" filter="tags:note" limit="all"}}
     {{#foreach posts}}
 
       <article class="post-article" role="article" itemscope itemtype="http://schema.org/Article">
