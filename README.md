@@ -13,7 +13,7 @@ _Banquo_ is a Ghost theme that aims to be a _portfolio-first_ site, with a side 
 - You want your _work / portfolio / projects_ (henceforth, "projects") page to be image-first / have thumbnails.
 - You want the option of blogging.  
 
-Seeing that this is a bit more specialized of a theme, it does take a bit of setup to get started.
+Seeing that this is a bit more specialized of a theme, it does take a bit of setup to get started. Please note that this theme currently does not work with Ghost's new "upload theme" feature. You will have to manually clone the theme into your Ghost themes folder on your server.
 
 ## Enable Public API
 
