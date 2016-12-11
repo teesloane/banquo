@@ -1,6 +1,8 @@
 # BANQUO
 > Good sir, why do you start; and seem to fear / Things that do sound so fair?
 
+Please Note! This project is no longer maintained. At the time of building it, I believe I was working with Ghost 0.9! ⚓️⚓️⚓️
+
 ![](https://cloud.githubusercontent.com/assets/12987958/17832552/988aa128-66d3-11e6-9639-27434c0e05ed.png)
 
 > The Banquo home page
