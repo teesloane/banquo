@@ -3,9 +3,13 @@
   "version": "0.0.1",
   "description": "Worthy Macbeth, we stay upon your leisure.",
   "author": "Tyler Sloane",
+  "engines": {
+    "ghost": ">=2.0.0",
+    "ghost-api": "v2"
+  },
   "devDependencies": {
     "bower": "^1.4.1",
-    "grunt": "~0.4.5",
+    "grunt": "^1.0.4",
     "grunt-concurrent": "*",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-copy": "^0.8.0",
@@ -17,6 +21,41 @@
     "grunt-notify": "^0.4.1",
     "grunt-prettify": "^0.4.0",
     "load-grunt-configs": "^0.4.3",
-    "load-grunt-tasks": "^3.2.0"
+    "load-grunt-tasks": "^4.0.0"
+  },
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teesloane/banquo.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teesloane/banquo/issues"
+  },
+  "homepage": "https://github.com/teesloane/banquo#readme",
+  "config": {
+    "image_sizes": {
+      "xxs": {
+        "width": 30
+      },
+      "xs": {
+        "width": 100
+      },
+      "s": {
+        "width": 300
+      },
+      "m": {
+        "width": 600
+      },
+      "l": {
+        "width": 1000
+      },
+      "xl": {
+        "width": 2000
+      }
+    }
   }
 }
